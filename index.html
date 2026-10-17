@@ -9,7 +9,7 @@
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify({
-				content: flag,
+				content: encodeURIComponent(flag) || "Nope",
 			}),
 		},
 	);
